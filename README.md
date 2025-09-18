@@ -7,3 +7,6 @@ tutorial if you dont know how to use it.
 5. check your inbox when red it means a message came in or you got a friend request.
 
 6. enjoy using it.
+
+
+Reminder: DONT UNZIP ONLY OPEN HTML IN ZIP FILE ITSELF!!!
