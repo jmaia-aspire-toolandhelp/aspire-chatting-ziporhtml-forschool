@@ -350,9 +350,9 @@
         import { getFirestore, collection, doc, addDoc, setDoc, getDoc, getDocs, deleteDoc, updateDoc, arrayUnion, arrayRemove, query, where, onSnapshot, serverTimestamp, writeBatch, orderBy, limit, Timestamp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-firestore.js";
         import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-storage.js";
 
-        const firebaseConfig = { apiKey: "AIzaSyCjviG9lzOtb2I5pLxO3Y9O71c1x2aXyyc", authDomain: "fir-chat-app-da3f3.firebaseapp.com", databaseURL: "https://fir-chat-app-da3f3-default-rtdb.firebaseio.com", projectId: "fir-chat-app-da3f3", storageBucket: "fir-chat-app-da3f3.firebasestorage.app", messagingSenderId: "662297826662", appId: "1:662297826662:web:634564565cbd2ee63964a7", measurementId: "G-T05NRKLEPN" };
+        const firebaseConfig = { apiKey: "YOUR_KEY_HERE", authDomain: "PASTE_HERE.firebaseapp.com", databaseURL: "https://fir-chat-app-da3f3-default-rtdb.firebaseio.com", projectId: "PROJECT_ID", storageBucket: "fir-chat-app-da3f3.firebasestorage.app", messagingSenderId: "SENDER_ID", appId: "YOUR_APP_AND_WEB_KEY", measurementId: "G-T05NRKLEPN" };
         const appId = firebaseConfig.projectId;
-        const adminEmails = ["linked.course.unity@gmail.com", "anotherzorme@gmail.com", "arampino@ippi.org"];
+        const adminEmails = ["EMAIL_1", "EMAIL_2", "EMAIL_3"];
 
         let db, auth, analytics, storage, audioContext;
         let currentUser = null, currentUserProfile = null, currentChatId = 'public';
