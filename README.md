@@ -10,3 +10,6 @@ tutorial if you dont know how to use it.
 
 
 Reminder: DONT UNZIP ONLY OPEN HTML IN ZIP FILE ITSELF!!!
+
+
+you can now make your own with the "html" template now so go ahead :D
