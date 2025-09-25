@@ -1,0 +1,21 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // This is the most important new rule. It allows ANYONE (even users
+    // who are not logged in) to read the system's configuration. The app
+    // needs this permission to check for "Maintenance Mode" before you log in.
+    match /artifacts/{appId}/public/data/config/{document=**} {
+      allow read: if true;
+      // Only Admins can change the system configuration.
+      allow write: if get(/databases/$(database)/documents/artifacts/$(appId)/public/data/users/$(request.auth.uid)).data.isAdmin == true;
+    }
+
+    // This section covers all other data like user profiles, messages, groups, etc.
+    match /artifacts/{appId}/public/data/{path=**} {
+      // Any user who is successfully logged in can read and write data.
+      allow read, write: if request.auth != null;
+    }
+  }
+}
