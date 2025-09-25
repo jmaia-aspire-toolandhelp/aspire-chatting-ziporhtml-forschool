@@ -1,0 +1,13 @@
+use; text
+use; format
+use; system
+use; xsdc
+use; easycoding
+
+classname xsdcode [MONO]
+{
+ managed.data
+ get.text
+      }
+print.text{"hello world!"}
+}
