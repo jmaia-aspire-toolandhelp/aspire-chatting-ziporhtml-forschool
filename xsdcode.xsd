@@ -10,4 +10,5 @@ classname xsdcode [MONO]
  get.text
       }
 print.text{"hello world!"}
+print.log{"log test"}
 }
